@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+
+}
+.logo {
+    margin: 0 auto;
+    display: flex;
+}
+#regForm {
+    /*background-color: #ffffff;*/
+    margin: 70px auto;
+    /*width: 70%;*/
+    /*min-width: 300px;*/
+}
+.heading {
+    color: #75CDA2;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 33px;
+}
+.headingRomonk {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 33px;
+    line-height: 2;
+}
+.half {
+    background-color: #75CDA2;
+    color: white;
+    position: absolute;
+    width: 100%;
+    /*padding: 20px;*/
+    left: 0;
+    bottom: 0;
+    height: 58vh;
+    /*border: 1px solid transparent;*/
+    border-radius: 20px 20px 0px 0px;}
+/* Style the input fields */
+input {
+    width: 80%;
+    color: #d9d9d9;
+    display: flex;
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 40px 0px 15px 0px;
+    font-size: 23px !important;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #D9D9D9;
+}
+input:focus{
+    outline: none;
+}
+/* Mark input boxes that gets an error on validation: */
+/*input.invalid {*/
+/*    background-color: #ff0000;*/
+/*}*/
+::placeholder {
+    color: #D9D9D9;
+}
+.validateForm {
+    color: #FF1515;
+    font-size: 18px;
+    text-align: center;
+    margin: 30px;
+}
+#checkIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background: #FFBD59;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+#progressBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background: #d9d9d9;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+#nextBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 70px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background: #FFBD59;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+#backBtn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 23px;
+    font-weight: bold;
+    color: #D9D9D9;
+    background: white;
+    border: none;
+    padding: 40px;
+}
+.uploadId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background: #75CDA2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+#takePhoto, #file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    background: #75CDA2;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.termsAndCondition {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    max-height: 450px;
+    padding: 0px 30px;
+}
+.termsSpanTag {
+    padding: 0px 10px;
+}
+.checkbox {
+    display: inline;
+    width: 20px;
+    height: 15px;
+    margin: 15px 0px 0px 30px;
+}
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+#image {
+    display: flex;
+    margin: 0 auto;
+}
+#circles {
+    text-align: center;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FFBD59;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+/*css for upload id button*/
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.custom-file-input label {
+    /*display: inline-block;*/
+}
+.uploadedImage, #captured-image-container {
+    width: 350px !important;
+    height: 260px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+}
+#video {
+    width: 300px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    margin-top: 50px !important;
+}
+#canvas {
+    width: 350px !important;
+    height: 260px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    margin-top: 50px !important;
+}
+.uploadedImage {
+    width: 350px !important;
+    height: 260px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    margin-top: 50px !important;
+}
+#inputFields {
+    display: flex;
+    margin: auto;
+}
+#canvas {
+    display: none !important;,;
+}
+
+#captured-image-container {
+    display: none !important;
+}
